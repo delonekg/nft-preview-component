@@ -1,0 +1,125 @@
+body {
+  background-color: hsl(217, 54%, 11%);
+  font-family: 'Outfit', sans-serif;
+}
+
+.nft-image {
+  width: 300px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: opacity 0.15s; 
+}
+
+.nft-image:hover {
+  opacity: 0.3;
+}
+
+.nft-images {
+  position: relative;
+}
+
+.preview-image {
+  position: absolute;
+  top: 130px;
+  left: 125px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  border: solid;
+}
+
+.preview-image:hover{
+  opacity: 1;
+}
+
+.main-container {
+  background-color: hsl(216, 50%, 16%);
+  padding: 20px;
+  width: 300px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.title {
+  color: white;
+  font-weight: 600;
+  text-align: left;
+  font-size: 18px;
+  letter-spacing: 0.01ch;
+}
+
+.description {
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+  font-size: 15px;
+  width: 280px;
+  text-align: left;
+}
+
+.price {
+  display: inline-block;
+  color: hsl(178, 100%, 50%);
+  font-weight: 400;
+  font-size: 13px;
+  margin-top: 10px;
+  vertical-align: middle;
+}
+
+.duration {
+  display: inline-block;
+  color: hsl(215, 51%, 70%);
+  font-weight: 400;
+  font-size: 13px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.eth-logo {
+  vertical-align: middle;
+  width: 10px;
+  margin-right: 3px;
+}
+
+.clock-logo {
+  width: 12px;
+}
+
+.price-info {
+  display: inline-block;
+  margin-right: 3px;
+}
+
+.duration-info {
+  display: inline-block;
+  width: 217px;
+  text-align: right;
+  vertical-align: middle;
+}
+
+hr {
+  color: hsl(215, 32%, 27%);
+}
+
+.creator {
+  display: inline-block;
+  font-size: 13px;
+  color: hsl(0, 0%, 100%);
+  margin-top: 15px;
+}
+
+span {
+  color: hsl(215, 51%, 70%);
+}
+
+.creator-picture {
+  width: 30px;
+  border: solid; 
+  border-width: 1px;
+  border-radius: 100px;
+  border-color: hsl(0, 0%, 100%);
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.attribution { font-size: 11px; text-align: left; }
+.attribution a { color: hsl(228, 45%, 44%); }

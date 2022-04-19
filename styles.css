@@ -120,6 +120,7 @@ hr {
 .creator-name {
   cursor: pointer;
   transition: color 0.15s;
+  color: white;
 }
 
 .creator-name:hover {

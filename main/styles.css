@@ -7,12 +7,6 @@ body {
   width: 300px;
   border-radius: 10px;
   text-align: center;
-  cursor: pointer;
-  transition: opacity 0.15s; 
-}
-
-.nft-image:hover {
-  opacity: 0.3;
 }
 
 .nft-images {
@@ -21,15 +15,22 @@ body {
 
 .preview-image {
   position: absolute;
-  top: 130px;
-  left: 125px;
+  top: 0;
+  bottom: 280px;
+  left: 1px;
+  padding-top: 130px;
+  padding-right: 125px;
+  padding-left: 125px;
+  padding-bottom: 122px;
   opacity: 0;
+  border-radius: 10px;
+  cursor: pointer;
   transition: opacity 0.15s;
-  border: solid;
 }
 
 .preview-image:hover{
   opacity: 1;
+  background-color: rgba(0, 255, 247, 0.434);
 }
 
 .main-container {
@@ -42,10 +43,16 @@ body {
 
 .title {
   color: white;
-  font-weight: 600;
+  font-weight: 400;
   text-align: left;
   font-size: 18px;
   letter-spacing: 0.01ch;
+  cursor: pointer;
+  transition: color 0.15s;
+}
+
+.title:hover {
+  color: hsl(178, 100%, 50%);
 }
 
 .description {
@@ -107,6 +114,15 @@ hr {
   margin-top: 15px;
 }
 
+.creator-name {
+  cursor: pointer;
+  transition: color 0.15s;
+}
+
+.creator-name:hover {
+  color:hsl(178, 100%, 50%);
+}
+
 span {
   color: hsl(215, 51%, 70%);
 }
@@ -121,5 +137,12 @@ span {
   margin-right: 10px;
 }
 
-.attribution { font-size: 11px; text-align: left; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { 
+  color: white;
+  font-size: 11px; 
+  text-align: left; 
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}

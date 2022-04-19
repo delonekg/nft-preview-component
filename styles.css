@@ -139,13 +139,3 @@ span {
   vertical-align: middle;
   margin-right: 10px;
 }
-
-.attribution { 
-  color: white;
-  font-size: 11px; 
-  text-align: left; 
-}
-
-.attribution a { 
-  color: hsl(228, 45%, 44%); 
-}

@@ -1,142 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root{
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    /* Main BG */
+    --very-dark-blue-main: hsl(217, 54%, 11%);
+    /* Card BG */
+    --very-dark-blue-card: hsl(216, 50%, 16%);
+    --very-dark-blue-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
 body {
-  background-color: hsl(217, 54%, 11%);
-  font-family: 'Outfit', sans-serif;
+    background-color: var(--very-dark-blue-main);
+    font-family: "Outfit", sans-serif;
+    font-size: 18px;
 }
 
-.nft-image {
-  width: 300px;
-  border-radius: 10px;
-  text-align: center;
+.card{
+    margin: auto;
+    background-color: var(--very-dark-blue-card);
+    width: 310px;
+    height: 590px;
+    padding: 1.25rem;
+    margin-top: 21px;
+    border-radius: 1rem;
+    margin-bottom: 20px;
+    box-shadow: 3px 3px 6px 3px black;
 }
 
-.nft-images {
-  position: relative;
+.card-equil{
+    position: relative;
+}
+.card-equil img {
+    /* margin: auto; */
+    width: 100%;
 }
 
-.preview-image {
-  position: absolute;
-  top: 0;
-  bottom: 280px;
-  left: 1px;
-  padding-top: 130px;
-  padding-right: 125px;
-  padding-left: 125px;
-  padding-bottom: 122px;
-  opacity: 0;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: opacity 0.15s;
+.card-equil div {
+    position: absolute;
+    top: 0;
+    background-color: var(--cyan);
+    width: 100%;
+    height: calc(100% - 4px);
+    z-index: 999;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
 }
 
-.preview-image:hover{
-  opacity: 1;
-  background-color: rgba(0, 255, 247, 0.434);
+.card-equil div:hover{
+    cursor: pointer;
+    opacity: 0.5;
 }
 
-.main-container {
-  background-color: hsl(216, 50%, 16%);
-  padding: 20px;
-  width: 300px;
-  margin: 100px auto 100px auto;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.44);
+.card-equil div img {
+    width: 48px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.title {
-  color: white;
-  font-weight: 400;
-  text-align: left;
-  font-size: 18px;
-  letter-spacing: 0.01ch;
-  cursor: pointer;
-  transition: color 0.15s;
+
+.card h2{
+    font-weight: 600;
+    color: var(--white);
+    margin-top: 15px !important;
+    margin-bottom: 0px !important;
 }
 
-.title:hover {
-  color: hsl(178, 100%, 50%);
+.card h2:hover{
+    color: var(--cyan);
 }
 
-.description {
-  color: hsl(215, 51%, 70%);
-  font-weight: 300;
-  font-size: 15px;
-  width: 280px;
-  text-align: left;
+.card p{
+    color: var(--soft-blue);
+    margin-top: 16px !important;
+    margin-bottom: 0px !important;
+    font-weight: 400;
+}
+.card ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    border-bottom: 2px solid var(--very-dark-blue-line);
+    padding: 26px 0;
+    margin-bottom: 0px !important;
 }
 
-.price {
-  display: inline-block;
-  color: hsl(178, 100%, 50%);
-  font-weight: 400;
-  font-size: 13px;
-  margin-top: 10px;
-  vertical-align: middle;
+.eth{
+    font-weight: 400;
+    color: var(--cyan);
 }
 
-.duration {
-  display: inline-block;
-  color: hsl(215, 51%, 70%);
-  font-weight: 400;
-  font-size: 13px;
-  margin-top: 10px;
-  margin-right: 10px;
+.eth img {
+    margin-right: 0.3rem;
 }
 
-.eth-logo {
-  vertical-align: middle;
-  width: 10px;
-  margin-right: 3px;
+.date {
+    font-weight: 400;
+    color: var(--soft-blue);
 }
 
-.clock-logo {
-  width: 12px;
+.date img{
+    margin-right: 0.3rem;
 }
 
-.price-info {
-  display: inline-block;
-  margin-right: 3px;
+.by{
+    margin-top: 15px !important;
+    display: flex;
+    margin: 20px 0px;
+}
+.by img{
+    width: 3rem;
+    border-radius: 50%;
+    border: 2px solid var(--white);
+}
+.by p {
+    margin-left: 15px;
+    font-weight: 300;
 }
 
-.duration-info {
-  display: inline-block;
-  width: 217px;
-  text-align: right;
-  vertical-align: middle;
+.by p span{
+    color: var(--white);
 }
 
-hr {
-  color: hsl(215, 32%, 27%);
-  size: 1px;
-  border: 1px solid;
+.by p span:hover{
+    color: var(--cyan);
 }
 
-.creator {
-  display: inline-block;
-  font-size: 13px;
-  color: hsl(0, 0%, 100%);
-  margin-top: 15px;
+.attribution { 
+    color: var(--white);
+    font-size: 15px !important; 
+    text-align: center; 
+}
+.attribution a { 
+    color: var(--cyan); 
 }
 
-.creator-name {
-  cursor: pointer;
-  transition: color 0.15s;
-  color: white;
-}
-
-.creator-name:hover {
-  color:hsl(178, 100%, 50%);
-}
-
-span {
-  color: hsl(215, 51%, 70%);
-}
-
-.creator-picture {
-  width: 30px;
-  border: solid; 
-  border-width: 1px;
-  border-radius: 100px;
-  border-color: hsl(0, 0%, 100%);
-  vertical-align: middle;
-  margin-right: 10px;
+@media (max-width: 768px) {
+    .card{
+        width: 80%;
+        height: 40%;
+    }
+    .by{
+        margin-bottom: 0px !important;
+    }
 }
